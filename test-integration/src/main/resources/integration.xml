@@ -11,7 +11,7 @@
            http://www.springframework.org/schema/integration/file
     http://www.springframework.org/schema/integration/file/spring-integration-file.xsd">
            
-   <int-file:inbound-channel-adapter directory="/tmp/" channel="fileChannel" filename-pattern="*.*">
+   <int-file:inbound-channel-adapter directory="${file.dir}" channel="fileChannel" filename-pattern="*.*">
 
 <int:poller fixed-delay="5000"></int:poller>
 
