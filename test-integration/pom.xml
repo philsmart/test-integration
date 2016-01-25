@@ -47,6 +47,10 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<executable>true</executable>
+					<systemProperty>
+                        <name>spring.profiles.active=dev</name>
+                        <value>prod</value>
+                    </systemProperty>
 				</configuration>
 			</plugin>
 		</plugins>
